@@ -1,17 +1,15 @@
 import {Page, NavController} from 'ionic-angular';
 
-import {VehicleListPage} from '../vehicle-list/vehicle-list';
-
 /*
-  Generated class for the CreateTripPage page.
+  Generated class for the AddVehiclePage page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Page({
-  templateUrl: 'build/pages/create-trip/create-trip.html',
+  templateUrl: 'build/pages/add-vehicle/add-vehicle.html',
 })
-export class CreateTripPage {
+export class AddVehiclePage {
   static get parameters() {
     return [[NavController]];
   }
@@ -19,9 +17,4 @@ export class CreateTripPage {
   constructor(nav) {
     this.nav = nav;
   }
-  
-  nextButtonClick(){
-    this.nav.push(VehicleListPage);
-  }
-  
 }
